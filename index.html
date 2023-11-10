@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de Ohm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Ley de Ohm</h1>
+        <div id="menu">
+            <button onclick="mostrarResistencia()">Calcular Resistencia</button>
+            <button onclick="mostrarCorriente()">Calcular Corriente</button>
+            <button onclick="mostrarPotencia()">Calcular Potencia</button>
+            <button onclick="mostrarVoltaje()">Calcular Voltaje</button>
+        </div>
+        <div id="seccion-resistencia" style="display: none;">
+            <label for="voltaje">Voltaje (V):</label>
+            <input type="number" id="voltaje-resistencia">
+            <label for="corriente">Corriente (A):</label>
+            <input type="number" id="corriente-resistencia">
+            <button onclick="calcularResistencia()">Calcular</button>
+            <div id="resultado-resistencia">
+                <p>Resistencia (Ω): <span id="resistencia">-</span> Ohmios</p>
+            </div>
+        </div>
+        <div id="seccion-corriente" style="display: none;">
+            <label for="voltaje">Voltaje (V):</label>
+            <input type="number" id="voltaje-corriente">
+            <label for="resistencia">Resistencia (Ω):</label>
+            <input type="number" id="resistencia-corriente">
+            <button onclick="calcularCorriente()">Calcular</button>
+            <div id="resultado-corriente">
+                <p>Corriente (A): <span id="corriente">-</span> Amperios</p>
+            </div>
+        </div>
+        <div id="seccion-potencia" style="display: none;">
+            <label for="voltaje">Voltaje (V):</label>
+            <input type="number" id="voltaje-potencia">
+            <label for="corriente">Corriente (A):</label>
+            <input type="number" id="corriente-potencia">
+            <button onclick="calcularPotencia()">Calcular</button>
+            <div id="resultado-potencia">
+                <p>Potencia (W): <span id="potencia">-</span> Vatios</p>
+            </div>
+        </div>
+        <div id="seccion-voltaje" style="display: none;">
+            <label for="resistencia">Resistencia (Ω):</label>
+            <input type="number" id="resistencia-voltaje">
+            <label for="corriente">Corriente (A):</label>
+            <input type="number" id="corriente-voltaje">
+            <button onclick="calcularVoltaje()">Calcular</button>
+            <div id="resultado-voltaje">
+                <p>Voltaje (V): <span id="voltaje">-</span> Voltios</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

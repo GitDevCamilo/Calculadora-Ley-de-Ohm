@@ -1,0 +1,52 @@
+body {
+    font-family: monospace, sans-serif;
+    background-color: #eee;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+#menu {
+    margin-bottom: 20px;
+}
+
+
+button {
+    font-family: monospace, sans-serif;
+    margin: 5px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+div[id^="seccion-"] {
+    display: none;
+}
+
+label, input {
+    display: block;
+    margin: 10px 25%;
+}
+
+#resultado-resistencia, #resultado-corriente, #resultado-potencia, #resultado-voltaje {
+    margin-top: 20px;
+}
